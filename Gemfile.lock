@@ -1,0 +1,30 @@
+PATH
+  remote: .
+  specs:
+    smaple (0.0.0)
+      axlsx
+      bundler (~> 1.8)
+      rake (~> 10.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    axlsx (2.0.1)
+      htmlentities (~> 4.3.1)
+      nokogiri (>= 1.4.1)
+      rubyzip (~> 1.0.0)
+    htmlentities (4.3.4)
+    mini_portile2 (2.3.0)
+    nokogiri (1.8.1)
+      mini_portile2 (~> 2.3.0)
+    rake (10.5.0)
+    rubyzip (1.0.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  smaple!
+
+BUNDLED WITH
+   1.16.1
