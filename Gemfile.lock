@@ -1,38 +1,30 @@
-GIT
-  remote: git://github.com/randym/axlsx.git
-  revision: c8ac844572b25fda358cc01d2104720c4c42f450
-  branch: master
-  specs:
-    axlsx (2.1.0.pre)
-      htmlentities (~> 4.3.4)
-      mimemagic (~> 0.3)
-      nokogiri (>= 1.6.6)
-      rubyzip (>= 1.2.1)
-
 PATH
   remote: .
   specs:
-    h_to_e (0.0.0)
+    hash_to_excel_creator (0.0.0)
+      axlsx (~> 2.1.0.pre)
       bundler (~> 1.15)
       rake (~> 12.0)
 
 GEM
   remote: https://rubygems.org/
   specs:
+    axlsx (2.1.0.pre)
+      htmlentities (~> 4.3.1)
+      nokogiri (>= 1.4.1)
+      rubyzip (~> 1.1.7)
     htmlentities (4.3.4)
-    mimemagic (0.3.2)
     mini_portile2 (2.3.0)
     nokogiri (1.8.1)
       mini_portile2 (~> 2.3.0)
     rake (12.3.0)
-    rubyzip (1.2.1)
+    rubyzip (1.1.7)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  axlsx!
-  h_to_e!
+  hash_to_excel_creator!
 
 BUNDLED WITH
    1.16.1
