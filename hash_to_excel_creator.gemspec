@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   # s.homepage    = 'https://github.com/1990prashant/excel_from_hash'
   s.license     = 'MIT'
   
-  s.add_dependency(%q<bundler>.freeze, ["~> 1.8"])
-  s.add_dependency(%q<rake>.freeze, ["~> 10.0"])
+  s.add_dependency(%q<bundler>.freeze, ["~> 1.15"])
+  s.add_dependency(%q<rake>.freeze, ["~> 12.0"])
   s.add_dependency(%q<axlsx>.freeze)
 end
