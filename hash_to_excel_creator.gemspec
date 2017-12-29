@@ -1,5 +1,5 @@
 Gem::Specification.new do |s|
-  s.name        = 'h_to_e'
+  s.name        = 'hash_to_excel_creator'
   s.version     = '0.0.0'
   s.date        = '2017-12-29'
   s.summary     = "Generate excel from different kind of hashesh"
@@ -12,5 +12,4 @@ Gem::Specification.new do |s|
   
   s.add_dependency(%q<bundler>.freeze, ["~> 1.15"])
   s.add_dependency(%q<rake>.freeze, ["~> 12.0"])
-  s.add_dependency(%q<axlsx>.freeze)
 end
