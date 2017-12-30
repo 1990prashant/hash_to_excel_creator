@@ -12,5 +12,7 @@ Gem::Specification.new do |s|
   
   s.add_dependency(%q<bundler>.freeze, ["~> 1.15"])
   s.add_dependency(%q<rake>.freeze, ["~> 12.0"])
-  s.add_dependency(%q<axlsx>.freeze, ["~> 2.1.0.pre"])
+  s.add_dependency 'axlsx', ">= 2.1.0.pre"
+  
+  s.add_dependency 'zip', '>= 2.0.2'
 end

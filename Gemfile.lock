@@ -2,9 +2,10 @@ PATH
   remote: .
   specs:
     hash_to_excel_creator (0.0.0)
-      axlsx (~> 2.1.0.pre)
+      axlsx (>= 2.1.0.pre)
       bundler (~> 1.15)
       rake (~> 12.0)
+      zip (>= 2.0.2)
 
 GEM
   remote: https://rubygems.org/
@@ -19,6 +20,7 @@ GEM
       mini_portile2 (~> 2.3.0)
     rake (12.3.0)
     rubyzip (1.1.7)
+    zip (2.0.2)
 
 PLATFORMS
   ruby
