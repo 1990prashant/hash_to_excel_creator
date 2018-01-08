@@ -19,7 +19,7 @@ class HashToExcelCreator
     h
   end
 
-  def convert_hash_to_excel(hash, file_name)
+  def convert_hash_to_excel(hash, user_file_name)
     if hash.is_a? Hash
       @workbook.add_worksheet(name: "Sheet-1") do |sheet|
         # add_heading(hash.keys, sheet)
@@ -33,7 +33,7 @@ class HashToExcelCreator
 
     end
     stream = @package.to_stream()
-    file_name = File.expand_path("../#{file_name}.xlsx")
+    file_name = File.expand_path("../#{user_file_name}.xlsx")
     File.open(file_name, 'w+') { |f| f.write(stream.read) }
   end
 
