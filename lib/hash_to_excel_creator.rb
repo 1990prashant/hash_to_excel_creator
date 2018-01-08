@@ -7,8 +7,8 @@ class HashToExcelCreator
     @workbook = @package.workbook
   end
 
-  def get_excel(hash = get_hash)
-    convert_hash_to_excel(hash)
+  def get_excel(hash = get_hash, file_name = "sample")
+    convert_hash_to_excel(hash, file_name)
   end
 
   def get_hash
@@ -19,9 +19,9 @@ class HashToExcelCreator
     h
   end
 
-  def convert_hash_to_excel(hash)
+  def convert_hash_to_excel(hash, file_name)
     if hash.is_a? Hash
-      @workbook.add_worksheet(name: "Prashant") do |sheet|
+      @workbook.add_worksheet(name: "Sheet-1") do |sheet|
         # add_heading(hash.keys, sheet)
         # add_values(hash.values, sheet)
         sheet.add_row(hash.keys.flatten)
@@ -33,7 +33,7 @@ class HashToExcelCreator
 
     end
     stream = @package.to_stream()
-    file_name = File.expand_path('../sample.xlsx')
+    file_name = File.expand_path("../#{file_name}.xlsx")
     File.open(file_name, 'w+') { |f| f.write(stream.read) }
   end
 
