@@ -10,6 +10,9 @@ Gem::Specification.new do |s|
   # s.homepage    = 'https://github.com/1990prashant/excel_from_hash'
   s.license     = 'MIT'
   
+  if RUBY_PLATFORM =~ /java/
+    s.add_dependency 'java'
+  end
   s.add_dependency(%q<bundler>.freeze, ["~> 1.15"])
   s.add_dependency(%q<rake>.freeze, ["~> 12.0"])
   s.add_dependency 'axlsx', ">= 2.1.0.pre"
