@@ -33,7 +33,8 @@ class HashToExcelCreator
 
     end
     stream = @package.to_stream()
-    File.open('lib/sample.xlsx', 'w+') { |f| f.write(stream.read) }
+    file_name = File.expand_path('../lib/sample.xlsx', __FILE__)
+    File.open(file_name, 'w+') { |f| f.write(stream.read) }
   end
 
   def add_heading(headings, sheet)

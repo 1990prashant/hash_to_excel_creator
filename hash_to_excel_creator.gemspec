@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.files       = ["hash_to_excel_creator.gemspec".freeze, "lib/hash_to_excel_creator.rb".freeze]
   # s.homepage    = 'https://github.com/1990prashant/excel_from_hash'
   s.license     = 'MIT'
-  s.require_paths = ['lib']
+  s.require_path = 'lib'
   
   if RUBY_PLATFORM =~ /java/
     s.add_dependency 'java'

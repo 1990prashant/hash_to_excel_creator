@@ -2,7 +2,7 @@
 
 Hash To excel creator will conver your hash or array of hashes into excel with allowing to create multiple worksheet in a single workbook.
 
-#Usage
+# Usage
 
 Add follwing line into your Gemfile
 
@@ -13,7 +13,7 @@ Create a new object of HashToExcelCreator Class and call get_excel() method
 hte = HashToExcelCreator.new
 hte.get_excel(hash)
 
-#Example hash
+# Example hash
 
 {
   a: [1, 2], 
