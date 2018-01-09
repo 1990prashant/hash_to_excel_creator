@@ -40,7 +40,7 @@ class HashToExcelCreator
 
   def create_excel(hash, sheet_number = 1)
     sheet_name = hash.has_key?(:sheet_name) ? hash[:sheet_name] : "Sheet-#{sheet_number}"
-    h = hash.delete(:sheet_name)
+    hash.delete(:sheet_name)
     @workbook.add_worksheet(name: sheet_name) do |sheet|
       sheet.add_row(h.keys.flatten)
       get_final_values(h.values).each do |arr|
