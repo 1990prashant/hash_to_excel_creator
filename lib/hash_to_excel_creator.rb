@@ -23,8 +23,8 @@ class HashToExcelCreator
     if hash.is_a? Hash
       create_excel(hash)
     elsif hash.is_a? Array
-      hash.each_with_index do |obj, (index + 1)|
-        create_excel(convert_to_symbolize_hash(obj), index)
+      hash.each_with_index do |obj, index|
+        create_excel(convert_to_symbolize_hash(obj), (index + 1))
       end
     end
     stream = @package.to_stream()
