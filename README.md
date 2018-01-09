@@ -20,3 +20,18 @@ hte.get_excel(hash, file_name)
   a: [1, 2], 
   b: [1, 3]
 }
+
+or 
+
+[
+  {
+    sheet_name: "Name of your sheet"
+    a: [1, 2], 
+    b: [1, 3]
+  }
+  {
+    sheet_name: "Name of your sheet"
+    a: [1, 2], 
+    b: [1, 3]
+  }
+]
